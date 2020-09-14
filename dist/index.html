@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="shortcut icon" href="public/icons/weather.png">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h1>Weather app</h1>
+            <div class="search-block">
+
+                <div class="field">
+                    <div class="ui fluid action input">
+                        <input class="search" type="text" placeholder="Search...">
+                        <div class="ui primary basic button">Search</div>
+                    </div>
+                    <div class="ui pointing label hint">
+                        Please enter the name of the city
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="data-block">
+                <div class="ui segment main-info">
+                    <div class="column">
+                        <h3 class="city-name"></h3>
+                        <div class="ui divider"></div>
+                        <div class="temp"></div>
+                        <div class="descr"></div>
+                        <div class="ui divider"></div>
+                        <div class="icon"></div>
+                        <div class="ui divider"></div>
+                        <div class="info">more info</div>
+                    </div>
+                </div>
+
+                <div class="other-info">
+                    <table class="ui celled table info-desk">
+                        <tbody>
+                            <tr>
+                                <td data-label="Name">Humidity</td>
+                                <td data-label="Status">
+                                    <span class="humidity"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Name">Pressure</td>
+                                <td data-label="Status">
+                                    <span class="pressure"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Name">Wind speed</td>
+                                <td data-label="Status">
+                                    <span class="wind-speed"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Name">Visibility</td>
+                                <td data-label="Status">
+                                    <span class="visibility"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="ui mini message blue hide">
+                        hide
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src=" https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
+        </script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <script src="public/js/script.js"></script>
+</body>
+
+</html>
