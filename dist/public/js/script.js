@@ -61,6 +61,7 @@ function showHint() {
         hint = document.querySelector('.hint')
 
     search.addEventListener('focus', (e) => {
+        console.log(2)
         setTimeout(() => {
             let val = e.target.value.length
             if (val === 0) {
@@ -70,6 +71,10 @@ function showHint() {
                 }, 10000)
             }
         }, 3500)
+    })
+
+    search.addEventListener('keypress', () => {
+        hint.classList.remove('active')
     })
 
     search.addEventListener('blur', () => {
