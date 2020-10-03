@@ -1,9 +1,7 @@
 function init() {
     let cityName = 'Moscow'
     getWeather(cityName)
-    showHint();
-    buttonAnimation('button')
-    buttonAnimation('hide')
+    showHint()
     document.querySelector('.button').addEventListener('click', getCityName)
 }
 
@@ -43,17 +41,6 @@ function getWeather(cityName) {
             }
         })
         .catch(() => { })
-}
-
-function buttonAnimation(elem) {
-    document.querySelector(`.${elem}`).addEventListener('mouseenter', (e) => {
-        e.target.classList.add('violet')
-        e.target.classList.remove('blue')
-    })
-    document.querySelector(`.${elem}`).addEventListener('mouseleave', (e) => {
-        e.target.classList.add('blue')
-        e.target.classList.remove('violet')
-    })
 }
 
 function showHint() {
